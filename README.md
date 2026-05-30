@@ -1,6 +1,6 @@
 # Banking System Backend
 
-Intermediate-level Spring Boot backend for a banking system with JWT authentication, authorization, account management, fund transfers, transaction history, and loan management.
+Spring Boot backend for a banking system with JWT authentication, authorization, account management, fund transfers, transaction history, and loan management.
 
 ## Tech Stack
 
@@ -36,7 +36,7 @@ The default database config is in `src/main/resources/application.properties`.
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/banking_db
 spring.datasource.username=postgres
-spring.datasource.password=postgres
+spring.datasource.password=0000
 ```
 
 ## Run the App
@@ -261,10 +261,3 @@ PATCH /api/admin/accounts/{accountId}/unfreeze
 Authorization: Bearer <admin-token>
 ```
 
-## Suggested Next Improvements
-
-- Add pagination and date filters for transaction history
-- Add refresh tokens
-- Add Flyway or Liquibase migrations
-- Add account locking for high-concurrency transfers
-- Add integration tests with Testcontainers
